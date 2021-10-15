@@ -1,0 +1,66 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.servicesHolder {
+  display: flex;
+  width: 100vw;
+  height: 13.8vh;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    border: none;
+    background: none;
+    font-size: 150%;
+    background: white;
+    color: $lightblue;
+    width: 33%;
+    height: 100%;
+    clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  button:hover {
+    color: white;
+    background: $lightblue;
+    border: 1px solid $lightblue;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .servicesHolder {
+    button {
+      font-size: 120%;
+    }
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .servicesHolder {
+    button {
+      font-size: 110%;
+    }
+  }
+}
+@media only screen and (max-width: 930px) {
+  .servicesHolder {
+    button {
+      font-size: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .servicesHolder {
+    button {
+      font-size: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .servicesHolder {
+    button {
+      font-size: 70%;
+    }
+  }
+}

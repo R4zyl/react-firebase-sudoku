@@ -1,0 +1,111 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.sectionOneContainer {
+  display: flex;
+  width: 99vw;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+
+  .mainImgContainer {
+    width: fit-content;
+    height: fit-content;
+    filter: drop-shadow(12px 12px 8px rgb(110, 110, 110));
+    img {
+      clip-path: polygon(
+        31% 0,
+        100% 0,
+        100% 20%,
+        100% 69%,
+        69% 100%,
+        20% 100%,
+        0 100%,
+        0 31%
+      );
+    }
+  }
+  .sectionOneTextContainer {
+    display: flex;
+    justify-content: center;
+    gap: 6vh;
+    flex-direction: column;
+    max-width: 45vw;
+    max-height: 55vh;
+
+    .title {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.2vw;
+      font-size: 250%;
+      text-shadow: 1px 1px 2px black;
+      color: $lightblue;
+      margin: 0px;
+    }
+    .underTitle {
+      font-size: 120%;
+    }
+  }
+}
+.underText {
+  position: absolute;
+  left: 1.5vw;
+  bottom: 6vh;
+  font-size: 70%;
+  max-width: 40vw;
+}
+.signUpButton {
+  position: absolute;
+  left: 1.5vw;
+  bottom: 2vh;
+  font-size: 70%;
+  border-radius: 15px;
+  border: 2px solid $lightblue;
+  background: $lightblue;
+  color: white;
+  font-weight: 600;
+  box-shadow: $box-shadow-light;
+  text-align: center;
+  height: fit-content;
+}
+.signUpButton:hover{
+  border: 2px solid $lightblue;
+  background: white;
+  color: $lightblue;
+}
+
+
+@media only screen and (max-width: 870px) {
+  .sectionOneContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+  
+    .mainImgContainer {
+      display:none;
+    }
+    .sectionOneTextContainer {
+      display: flex;
+      justify-content: center;
+      gap: 5vh;
+      flex-direction: column;
+      max-width: 85vw;
+      max-height: 55vh;
+  
+      .title {
+        font-size: 190%;
+        text-shadow: 1px 1px 2px black;
+        color: $lightblue;
+      }
+      .underTitle {
+        font-size: 140%;
+      }
+    }
+  }
+  .underText {
+    font-size: 50%;
+    max-width: 30vw;
+  }
+}

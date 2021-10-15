@@ -1,0 +1,18 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.logoHolder {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  img {
+    position: absolute;
+    left: 3vh;
+    top: 3.2vh;
+  }
+  .logoBackgroundImg{
+    filter: drop-shadow(0.5px 0.5px 3px #535353);
+  }
+}

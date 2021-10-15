@@ -1,0 +1,41 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+
+.footerContainer{
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right:20px;
+    padding-left:20px;
+    align-items: center;
+    bottom:0;
+    right:0;
+    width:fit-content;
+    background:$lightblue;
+    color:white;
+    font-size:120%;
+    height:15vh;
+    clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 100%, 69% 100%, 20% 100%, 0 100%, 0 20%);
+
+    filter: drop-shadow(-1.5px -1.5px 7px rgb(189, 189, 189));
+    input{
+        justify-self: flex-end;
+    }
+    button {
+        margin-left:2vw;
+        border:2px solid white;
+        background:none;
+        color:white;
+        text-transform:uppercase;
+        letter-spacing: 0.5px;
+    }
+    button:hover {
+        box-shadow: $box-shadow-light;
+        background:white;
+        color:$lightblue-faded;
+
+    }
+}

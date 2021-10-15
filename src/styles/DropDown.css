@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7fc5c5da;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #78B7EB;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  background: white;
+  overflow-x: hidden;
+}
+
+.errormessage {
+  margin-top: 20px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successmessage {
+  color: #2b7515;
+  background: #ecffd6;
+  padding: 5px;
+  border: 1px solid #617c42;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.warningmessage {
+  color: #756e15;
+  background: #fffbd1;
+  padding: 5px;
+  border: 1px solid #87803e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.servicesHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 13.8vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicesHolder button {
+  border: none;
+  background: none;
+  font-size: 150%;
+  background: white;
+  color: #78B7EB;
+  width: 33%;
+  height: 100%;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+          clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.servicesHolder button:hover {
+  color: white;
+  background: #78B7EB;
+  border: 1px solid #78B7EB;
+}
+
+@media only screen and (max-width: 1370px) {
+  .servicesHolder button {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .servicesHolder button {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .servicesHolder button {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .servicesHolder button {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .servicesHolder button {
+    font-size: 70%;
+  }
+}
+/*# sourceMappingURL=DropDown.css.map */
