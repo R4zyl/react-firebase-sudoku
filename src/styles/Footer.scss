@@ -39,34 +39,3 @@
 
     }
 }
-
-@media only screen and (max-width: 870px) {
-    .footerContainer{
-        font-size:60%;
-        width:70vw;
-        height:18vh;
-        input{
-            width:50vw;
-        }
-
-        button {
-            margin-top:2vh;
-            margin-left:2vw;
-            border:2px solid white;
-            width:fit-content;
-            font-size:20%;
-            background:none;
-            color:white;
-            text-transform:uppercase;
-            letter-spacing: 0.5px;
-        }
-        button:hover {
-            box-shadow: $box-shadow-light;
-            background:white;
-            color:$lightblue-faded;
-    
-        }
-    }
-
-
-}
